@@ -22,18 +22,21 @@ jobs:
     - name: Build the application
       run: msbuild /p:Configuration=Release /t:build
 
-    - name: Publish the application
-      run:  msbuild /p:Configuration=Release /t:publish
+#     - name: Publish the application
+#       run:  msbuild /p:Configuration=Release /t:publish
+    - name: Publish
+      run: msbuild EmployeeProject\WebApplication\WebApplication.csproj /t:Publish /p:Configuration=Release /p:OutputPath=website
+
 
     - name: Upload the application artifacts
       uses: actions/upload-artifact@v2
       with:
         name: published-app
-        path: ./bin/Release/net5.0/publish
+        path: website
  
-    - name: Check if files exist
-      if: "test -n '$(find ./bin/Release/net5.0/publish -type f -print -quit)'"
-      run: echo "Files exist in path"
+#     - name: Check if files exist
+#       if: "test -n '$(find ./bin/Release/net5.0/publish -type f -print -quit)'"
+#       run: echo "Files exist in path"
 
 
     - name: Deploy to Azure Web App
