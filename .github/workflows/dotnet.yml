@@ -23,17 +23,16 @@ jobs:
       run: msbuild /p:Configuration=Release /t:build
 
     - name: Publish the application
-      run: |
-        msbuild /p:Configuration=Release /t:publish
-        cd publish
-        dir
-        ls
+      run:  msbuild /p:Configuration=Release /t:publish
 
     - name: Upload the application artifacts
       uses: actions/upload-artifact@v2
       with:
         name: published-app
         path: ./bin/Release/net5.0/publish
+        cd ./bin/Release/net5.0/publish
+        dir
+        ls
 
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
