@@ -30,9 +30,9 @@ jobs:
       with:
         name: published-app
         path: ./bin/Release/net5.0/publish
-        cd ./bin/Release/net5.0/publish
-        dir
-        ls
+#         cd ./bin/Release/net5.0/publish
+#         dir
+#         ls
 
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
