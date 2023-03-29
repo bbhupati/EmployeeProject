@@ -22,13 +22,13 @@ jobs:
     - name: Build the application
       run: msbuild /p:Configuration=Release /t:build
 
-#     - name: Publish the application
-#       run:  msbuild /p:Configuration=Release /t:publish
-    - name: Publish
-      run: msbuild WebApplication\\WebApplication.csproj /t:Publish /p:Configuration=Release /p:OutputPath=website
+    - name: Publish the application
+      run:  msbuild /p:Configuration=Release /t:publish
+#     - name: Publish
+#       run: msbuild WebApplication\\WebApplication.csproj /t:Publish /p:Configuration=Release /p:OutputPath=website
       
     - name: List files in output directory
-      run: ls -R ${{ github.workspace }}
+      run: ls -R ${{ github.workspace }}/./bin/Release/net5.0/publish
 
 
     - name: Upload the application artifacts
@@ -47,7 +47,7 @@ jobs:
       with:
         app-name: 'EmployeeProject29'
         publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-        package: ${{ github.workspace }}/website
+        package: ${{ github.workspace }}/./bin/Release/net5.0/publish
         slot-name: 'production'
         resource-group: 'MyRgrp'
         action: 'swap'
