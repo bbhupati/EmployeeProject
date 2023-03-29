@@ -23,7 +23,11 @@ jobs:
       run: msbuild /p:Configuration=Release /t:build
 
     - name: Publish the application
-      run: msbuild /p:Configuration=Release /t:publish
+      run: |
+        msbuild /p:Configuration=Release /t:publish
+        cd publish
+        dir
+        ls
 
     - name: Upload the application artifacts
       uses: actions/upload-artifact@v2
