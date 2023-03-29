@@ -35,7 +35,8 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: published-app
-        path: website
+        path: ./bin/Release/net5.0/publish
+        if-no-files-found: fail
  
 #     - name: Check if files exist
 #       if: "test -n '$(find ./bin/Release/net5.0/publish -type f -print -quit)'"
