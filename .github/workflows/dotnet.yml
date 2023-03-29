@@ -28,7 +28,7 @@ jobs:
 #       run: msbuild WebApplication\\WebApplication.csproj /t:Publish /p:Configuration=Release /p:OutputPath=website
       
     - name: List files in output directory
-      run: ls -R ${{ github.workspace }}/./bin/Release/net5.0/publish
+      run: ls -R ${{ github.workspace }}
 
 
     - name: Upload the application artifacts
