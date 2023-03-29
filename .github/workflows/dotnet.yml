@@ -28,11 +28,12 @@ jobs:
     - name: Upload the application artifacts
       uses: actions/upload-artifact@v2
       with:
-        name: Employeeproject
+        name: published-app
         path: ./bin/Release/net5.0/publish
-#         cd ./bin/Release/net5.0/publish
-#         dir
-#         ls
+        run:
+          cd ./bin/Release/net5.0/publish
+          dir
+          ls
 
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
