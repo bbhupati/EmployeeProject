@@ -28,7 +28,7 @@ jobs:
     - name: Upload the application artifacts
       uses: actions/upload-artifact@v2
       with:
-        name: published-app
+        name: Employeeproject
         path: ./bin/Release/net5.0/publish
 #         cd ./bin/Release/net5.0/publish
 #         dir
