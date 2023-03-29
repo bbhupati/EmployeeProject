@@ -26,7 +26,7 @@ jobs:
 #       run:  msbuild /p:Configuration=Release /t:publish
     - name: Publish
 #       run: msbuild WebApplication\WebApplication.csproj /t:Publish /p:Configuration=Release /p:OutputPath=website
-      run: msbuild Employeeproject.sln /t:Publish /p:Configuration=Release /p:OutputPath=website
+      run: msbuild Employeeproject\Employeeproject.sln /t:Publish /p:Configuration=Release /p:OutputPath=website
 
 
     - name: Upload the application artifacts
