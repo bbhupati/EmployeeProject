@@ -24,13 +24,9 @@ jobs:
 
     - name: Publish the application
       run:  msbuild /p:Configuration=Release /t:publish
-      
-#     - name: Publish
-#       run: msbuild WebApplication\\WebApplication.csproj /t:Publish /p:Configuration=Release /p:OutputPath=website
-      
+    
     - name: List files in output directory
-      run: ls -R ${{ github.workspace }}/bin/Release/net5.0/publish
-
+      run: ls -R ${{ github.workspace }}/WebApplication/bin/Release/net5.0/publish
 
     - name: Upload the application artifacts
       uses: actions/upload-artifact@v2
@@ -42,7 +38,6 @@ jobs:
 #     - name: Check if files exist
 #       if: "test -n '$(find ./bin/Release/net5.0/publish -type f -print -quit)'"
 #       run: echo "Files exist in path"
-
 
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
