@@ -28,10 +28,10 @@ jobs:
     # - name: Publish the application
     #   run: msbuild WebApplication/WebApplication.csproj /p:Configuration=Release /t:publish /p:PublishDir=website
     
-    - name: List files in output directory
-      run: |
-        cd ./WebApplication/bin/Release/net5.0/publish
-        ls -R ${github.workspace}
+    # - name: List files in output directory
+    #   run: |
+    #     cd ./WebApplication/bin/Release/net5.0/publish
+    #     ls -R ${github.workspace}
 
     - name: Upload the application artifacts
       uses: actions/upload-artifact@v2
@@ -60,3 +60,8 @@ jobs:
         # resource-group: 'MyRgrp'
         # action: 'swap'
         # timeout: '3600'
+    
+    - name: List files in publish directory
+      run: |
+        # cd ./WebApplication/bin/Release/net5.0/publish
+        ls -R ${github.workspace}/WebApplication/bin/Release/net5.0/publish
