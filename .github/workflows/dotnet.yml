@@ -54,8 +54,8 @@ jobs:
       with:
         app-name: 'employeeproject29'
         publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-        # package: ${{ github.workspace }}/WebApplication/bin/Release/net5.0/publish
-        package: .
+        package: ${{ github.workspace }}/WebApplication/bin/Release/net5.0/publish
+        # package: .
         # slot-name: 'production'
         # resource-group: 'MyRgrp'
         # action: 'swap'
