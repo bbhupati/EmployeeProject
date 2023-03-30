@@ -27,7 +27,7 @@ jobs:
     
     - name: List files in output directory
       run: |
-      pwd 
+        pwd 
       ls -R ${{ github.workspace }}/WebApplication/bin/Release/net5.0/publish
 
     - name: Upload the application artifacts
