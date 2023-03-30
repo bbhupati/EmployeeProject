@@ -36,9 +36,9 @@ jobs:
     - name: Upload the application artifacts
       uses: actions/upload-artifact@v2
       with:
-        # name: published_web
-        # path: ./bin/Release/net5.0/publish
-        # if-no-files-found: fail
+        name: published_web
+        path: ./WebApplication/bin/Release/net5.0/publish
+        if-no-files-found: fail
  
 #     - name: Check if files exist
 #       if: "test -n '$(find ./bin/Release/net5.0/publish -type f -print -quit)'"
