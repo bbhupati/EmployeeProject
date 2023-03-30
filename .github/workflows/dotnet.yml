@@ -31,7 +31,8 @@ jobs:
     - name: List files in output directory
       run: |
         # cd ./WebApplication/website
-        ls -R ${github.workspace}/WebApplication/website
+        pwd
+        # ls ${github.workspace}/WebApplication/website
 
     - name: Upload the application artifacts
       uses: actions/upload-artifact@v2
