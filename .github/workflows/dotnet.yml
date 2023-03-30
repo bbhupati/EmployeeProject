@@ -22,19 +22,25 @@ jobs:
     - name: Build the application
       run: msbuild /p:Configuration=Release /t:build
 
+    # - name: Publish the application
+    #   run:  msbuild /p:Configuration=Release /t:publish
     - name: Publish the application
-      run:  msbuild /p:Configuration=Release /t:publish
+      run: msbuild WebApplication/WebApplication.csproj /p:Configuration=Release /t:publish /p:PublishDir=website
+
     
-    - name: List files in output directory
-      run: |
-        cd ./WebApplication/bin/Release/net5.0
-        ls -R ${github.workspace}
+    # - name: List files in output directory
+    #   run: |
+    #     cd ./WebApplication/bin/Release/net5.0
+    #     ls -R ${github.workspace}
 
     - name: Upload the application artifacts
       uses: actions/upload-artifact@v2
       with:
-        name: published-app
-        path: ./bin/Release/net5.0/publish
+        # name: published_web
+        # path: ./bin/Release/net5.0/publish
+        # if-no-files-found: fail
+        name: website
+        path: WebApplication/website/**
         if-no-files-found: fail
  
 #     - name: Check if files exist
