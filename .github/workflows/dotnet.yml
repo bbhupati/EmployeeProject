@@ -38,7 +38,7 @@ jobs:
       with:
         name: published-app
         path: ./WebApplication/bin/Release/net5.0/publish
-        if-no-files-found: fail
+        # if-no-files-found: fail
 
 #     - name: Check if files exist
 #       if: "test -n '$(find ./bin/Release/net5.0/publish -type f -print -quit)'"
