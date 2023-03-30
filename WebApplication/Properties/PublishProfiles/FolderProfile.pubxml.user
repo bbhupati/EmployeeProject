@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\asp-net-sample-application\EmployeeProject\WebApplication\bin\Release\net5.0\publish</_PublishTargetUrl>
+    <History>True|2023-03-30T06:06:42.1843658Z;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="assets/bootstrap/css/bootstrap-theme.css">
+      <publishTime>03/30/2023 01:10:50</publishTime>
+    </File>
+    <File Include="assets/bootstrap/css/bootstrap-theme.css.map">
+      <publishTime>03/30/2023 01:10:50</publishTime>
+    </File>
+    <File Include="assets/bootstrap/css/bootstrap-theme.min.css">
+      <publishTime>03/30/2023 01:10:50</publishTime>
+    </File>
+    <File Include="assets/bootstrap/css/bootstrap-theme.min.css.map">
+      <publishTime>03/30/2023 01:10:50</publishTime>
+    </File>
+    <File Include="assets/bootstrap/css/bootstrap.css">
+      <publishTime>03/30/2023 01:10:50</publishTime>
+    </File>
+    <File Include="assets/bootstrap/css/bootstrap.css.map">
+      <publishTime>03/30/2023 01:10:50</publishTime>
+    </File>
+    <File Include="assets/bootstrap/css/bootstrap.min.css">
+      <publishTime>03/30/2023 01:10:50</publishTime>
+    </File>
+    <File Include="assets/bootstrap/css/bootstrap.min.css.map">
+      <publishTime>03/30/2023 01:10:50</publishTime>
+    </File>
+    <File Include="assets/bootstrap/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>03/30/2023 01:10:50</publishTime>
+    </File>
+    <File Include="assets/bootstrap/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>03/30/2023 01:10:50</publishTime>
+    </File>
+    <File Include="assets/bootstrap/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>03/30/2023 01:10:50</publishTime>
+    </File>
+    <File Include="assets/bootstrap/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>03/30/2023 01:10:50</publishTime>
+    </File>
+    <File Include="assets/bootstrap/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>03/30/2023 01:10:50</publishTime>
+    </File>
+    <File Include="assets/bootstrap/js/bootstrap.js">
+      <publishTime>03/30/2023 01:10:50</publishTime>
+    </File>
+    <File Include="assets/bootstrap/js/bootstrap.min.js">
+      <publishTime>03/30/2023 01:10:50</publishTime>
+    </File>
+    <File Include="assets/bootstrap/js/npm.js">
+      <publishTime>03/30/2023 01:10:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>06/15/2015 07:36:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/19/2015 01:49:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/19/2015 01:49:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/19/2015 01:49:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/19/2015 01:49:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/19/2015 01:49:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/19/2015 01:49:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/19/2015 01:49:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/19/2015 01:49:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/19/2015 01:49:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/19/2015 01:49:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/19/2015 01:49:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/19/2015 01:49:46</publishTime>
+    </File>
+    <File Include="bin/WebApplication.dll">
+      <publishTime>03/30/2023 11:36:41</publishTime>
+    </File>
+    <File Include="bin/WebApplication.pdb">
+      <publishTime>03/30/2023 11:36:41</publishTime>
+    </File>
+    <File Include="bin/WebApplication.XmlSerializers.dll">
+      <publishTime>03/30/2023 11:36:41</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>03/30/2023 01:10:50</publishTime>
+    </File>
+    <File Include="Home.aspx">
+      <publishTime>03/30/2023 01:10:50</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>03/30/2023 01:10:50</publishTime>
+    </File>
+    <File Include="Manage.aspx">
+      <publishTime>03/30/2023 01:10:50</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>03/30/2023 01:10:50</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>03/30/2023 11:36:41</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

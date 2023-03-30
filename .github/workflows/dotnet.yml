@@ -30,9 +30,8 @@ jobs:
     
     - name: List files in output directory
       run: |
-        # cd ./WebApplication/website
-        pwd
-        # ls ${github.workspace}/WebApplication/website
+        cd ./WebApplication/bin/Release/net5.0
+        ls -R ${github.workspace}
 
     - name: Upload the application artifacts
       uses: actions/upload-artifact@v2
@@ -40,9 +39,6 @@ jobs:
         # name: published_web
         # path: ./bin/Release/net5.0/publish
         # if-no-files-found: fail
-        name: website
-        path: WebApplication/website/**
-        if-no-files-found: fail
  
 #     - name: Check if files exist
 #       if: "test -n '$(find ./bin/Release/net5.0/publish -type f -print -quit)'"
