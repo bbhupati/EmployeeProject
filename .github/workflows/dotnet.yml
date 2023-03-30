@@ -43,6 +43,10 @@ jobs:
 #     - name: Check if files exist
 #       if: "test -n '$(find ./bin/Release/net5.0/publish -type f -print -quit)'"
 #       run: echo "Files exist in path"
+      - name: Azure Login
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
 
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
