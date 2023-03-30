@@ -30,7 +30,7 @@ jobs:
     
     - name: List files in output directory
       run: |
-        cd ./WebApplication/bin/Release/net5.0
+        cd ./WebApplication/bin/Release/net5.0/publish
         ls -R ${github.workspace}
 
     - name: Upload the application artifacts
