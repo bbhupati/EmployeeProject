@@ -64,4 +64,4 @@ jobs:
     - name: List files in publish directory
       run: |
         # cd ./WebApplication/bin/Release/net5.0/publish
-        ls -R ${github.workspace}/WebApplication/bin/Release/net5.0/publish
+        ls -R ./WebApplication/bin/Release/net5.0/publish
