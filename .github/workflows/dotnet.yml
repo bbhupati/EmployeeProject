@@ -22,11 +22,11 @@ jobs:
     - name: Build the application
       run: msbuild /p:Configuration=Release /t:build
 
-    # - name: Publish the application
-    #   run:  msbuild /p:Configuration=Release /t:publish
     - name: Publish the application
-      run: msbuild WebApplication/WebApplication.csproj /p:Configuration=Release /t:publish /p:PublishDir=website
+      run:  msbuild /p:Configuration=Release /t:publish
 
+    # - name: Publish the application
+    #   run: msbuild WebApplication/WebApplication.csproj /p:Configuration=Release /t:publish /p:PublishDir=website
     
     - name: List files in output directory
       run: |
@@ -36,10 +36,10 @@ jobs:
     - name: Upload the application artifacts
       uses: actions/upload-artifact@v2
       with:
-        name: published_web
+        name: published-app
         path: ./WebApplication/bin/Release/net5.0/publish
         if-no-files-found: fail
- 
+
 #     - name: Check if files exist
 #       if: "test -n '$(find ./bin/Release/net5.0/publish -type f -print -quit)'"
 #       run: echo "Files exist in path"
